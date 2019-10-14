@@ -62,6 +62,6 @@
         survey_enabled: true
         survey_spec: "{{ lookup('template', '{{playbook_dir}}/network_setup/templates/backup.j2') }}"
         tower_username: admin
-        tower_password: GGA5kTvZ1g3riL
+        tower_password: "{{ ansible_password }}"
         tower_host: "https://localhost"
         validate_certs: no
